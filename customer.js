@@ -21,12 +21,16 @@ function queryProducts(){
         for (var i = 0; i< res.length; i++) {
             console.log(res[i].item_id + " | " + res[i].product_name + " | " + res[i].department_name + "|" + res[i].price + "|" + res[i].stock_quantity);
         }
-    });
-    console.log(query.sql);
-    connection.end();
-}
+        console.log("---------------------------------");
+    });    
+};
 
-// build constructors for questions:
+
+
+
+console.log(query.sql);
+    connection.end();
+    // build constructors for questions:
 // build database for inventory
 // figure out why table wont accept insert into the table
 //  The first should ask them the ID of the product they would like to buy.
